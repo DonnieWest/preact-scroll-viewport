@@ -1,7 +1,7 @@
-# `<ScrollViewport />` <sub>_for [Preact]_</sub>
+# `<ScrollViewport />` <sub>_for [React]_</sub>
 
-[![NPM](https://img.shields.io/npm/v/preact-scroll-viewport.svg)](https://www.npmjs.com/package/preact-scroll-viewport)
-[![Travis](https://travis-ci.org/developit/preact-scroll-viewport.svg?branch=master)](https://travis-ci.org/developit/preact-scroll-viewport)
+[![NPM](https://img.shields.io/npm/v/react-scroll-viewport.svg)](https://www.npmjs.com/package/react-scroll-viewport)
+[![Travis](https://travis-ci.org/developit/preact-scroll-viewport.svg?branch=master)](https://travis-ci.org/DonnieWest/react-scroll-viewport#)
 
 A compositional component that renders its children based on the current viewport.
 
@@ -63,7 +63,7 @@ _**\*\* About synchronous rendering:** It's best to try without `sync` enabled f
 
 ## Simple Example
 
-[**View this example on CodeeSandbox**](https://codesandbox.io/s/j70zm85py9)
+[**View this example on CodeSandbox**](https://codesandbox.io/s/j70zm85py9)
 ```js
 import ScrollViewport from 'react-scroll-viewport';
 
