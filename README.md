@@ -7,9 +7,9 @@ A compositional component that renders its children based on the current viewpor
 
 Useful for those super important business applications where one must show _all_ million rows.
 
-#### [JSFiddle Demo](https://jsfiddle.net/developit/t6qqnwn9/)
+#### [CodeSandbox Demo](https://codesandbox.io/s/j70zm85py9)
 
-<a href="https://jsfiddle.net/developit/t6qqnwn9/">
+<a href="https://codesandbox.io/s/j70zm85py9">
 	<img alt="preview" src="https://i.gyazo.com/38f75b5db9615b0a08304d6cca209e47.gif" width="420">
 </a>
 
@@ -63,10 +63,9 @@ _**\*\* About synchronous rendering:** It's best to try without `sync` enabled f
 
 ## Simple Example
 
-[**View this example on JSFiddle**](https://jsfiddle.net/developit/t6qqnwn9/)
-
+[**View this example on CodeeSandbox**](https://codesandbox.io/s/j70zm85py9)
 ```js
-import ScrollViewport from 'preact-scroll-viewport';
+import ScrollViewport from 'react-scroll-viewport';
 
 class Demo extends Component {
     // 30px tall rows
@@ -98,6 +97,5 @@ render(Demo, document.body);
 
 [MIT]
 
-
-[Preact]: https://github.com/developit/preact
+[Original]: https://github.com/developit/preact-scroll-viewport
 [MIT]: http://choosealicense.com/licenses/mit/

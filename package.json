@@ -1,10 +1,10 @@
 {
-  "name": "preact-scroll-viewport",
+  "name": "react-scroll-viewport",
   "amdName": "ScrollViewport",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Only renders items visible in the current viewport.",
-  "main": "dist/preact-scroll-viewport.js",
-  "minified:main": "dist/preact-scroll-viewport.min.js",
+  "main": "dist/react-scroll-viewport.js",
+  "minified:main": "dist/react-scroll-viewport.min.js",
   "jsnext:main": "src/index.js",
   "scripts": {
     "build": "npm-run-all transpile optimize minify",
@@ -21,17 +21,11 @@
       "stage-0"
     ],
     "plugins": [
-      "transform-class-properties",
-      [
-        "transform-react-jsx",
-        {
-          "pragma": "h"
-        }
-      ]
+      "transform-class-properties"
     ]
   },
   "keywords": [
-    "preact",
+    "react",
     "virtual",
     "viewport",
     "virtualized",
@@ -41,16 +35,26 @@
     "src",
     "dist"
   ],
-  "author": "Jason Miller <jason@developit.ca>",
+  "contributors": [
+    "Jason Miller <jason@developit.ca>",
+    "Donnie West <me@donniewest.com>"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/developit/preact-scroll-viewport.git"
+    "url": "git+https://github.com/DonnieWest/react-scroll-viewport.git"
   },
   "bugs": {
-    "url": "https://github.com/developit/preact-scroll-viewport/issues"
+    "url": "https://github.com/DonnieWest/react-scroll-viewport/issues"
   },
-  "homepage": "https://github.com/developit/preact-scroll-viewport",
+  "eslintConfig": {
+    "extends": "koality",
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true
+    }
+  },
+  "homepage": "https://github.com/DonnieWest/react-scroll-viewport",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-eslint": "^8.0.1",
@@ -61,11 +65,22 @@
     "babel-preset-stage-0": "^6.16.0",
     "babel-register": "^6.18.0",
     "chai": "^4.1.2",
-    "eslint": "^4.10.0",
+    "eslint": "^4.11.0",
+    "eslint-config-koality": "^2.2.0",
+    "eslint-config-prettier": "^2.7.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-jsx": "^4.0.2",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-standard": "^3.0.1",
     "mocha": "^4.0.1",
     "npm-run-all": "^4.1.1",
-    "preact": "^8.2.6",
+    "prettier": "^1.8.2",
+    "prettier-eslint-cli": "^4.4.0",
+    "react": "^8.2.6",
     "rollup": "^0.36.3",
     "rollup-plugin-babel": "^2.6.1",
     "rollup-plugin-es3": "^1.0.3",
@@ -73,6 +88,6 @@
     "uglify-js": "^2.7.4"
   },
   "peerDependencies": {
-    "preact": "*"
+    "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
   }
 }
